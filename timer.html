@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timer App</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    </style>
+</head>
+<body>
+
+  <h1>pomodora Timer</h1>
+  <div id="timer">25:00</div>
+
+  <div class="controls">
+    <button class="start" onclick="startTimer()">Start</button>
+    <button class="stop" onclick="stopTimer()">Stop</button>
+    <button class="reset" onclick="resetTimer()">Reset</button>
+  </div>
+
+  <div class="modes">
+    <button class="mode-btn" onclick="setMode(5 * 60, this)">Short Break</button>
+    <button class="mode-btn" onclick="setMode(15 * 60, this)">Long Break</button>
+  </div>
+
+  <audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>
